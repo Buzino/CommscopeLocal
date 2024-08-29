@@ -1,0 +1,5 @@
+Tulajdonságok kötőtáblával: cikkszám és tulajdonságid kulccsal + leíró tulajdonság az érték (esetleg több érték (bit messy but viable))
+Mennyiségek kötőtábla: cikkszám és raktár -> kulcs + leíró a mennyiség
+
+Adatok feltöltésénél:
+- ha csak egy | (altgr w) van benne (tehát két értékű az adat) és tartalmaz bizonyos szavak közül legalább egyet (m, ft, km, °C, °F, in), akkor azt szétszedjük érték1 és érték2-re, illetve a tulajdonságnak - ha nem volna - feltöltjük a mértékegység rekordjait. Ha több részből áll, nincs, vagy legalábbis nem "megfelelő" mértékegysége van, akkor csak egy értékbe lesz berakva (ezt később kell majd parse-olni)
